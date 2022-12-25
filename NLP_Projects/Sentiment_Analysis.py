@@ -12,6 +12,7 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import emoji
 from nltk.stem import WordNetLemmatizer
+import unicodedata
 # from nltk.corpus import stopwords
 # import re
 
@@ -57,10 +58,6 @@ def sentiment_scores(sentence):
 
     else :
         print("Neutral")
-
-import unicodedata
-
-
 
 # Driver code
 if __name__ == "__main__" :
