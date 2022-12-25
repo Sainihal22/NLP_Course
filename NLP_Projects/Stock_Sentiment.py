@@ -59,4 +59,6 @@ for i in range(0,len(test.index)):
 test_dataset = countvector.transform(test_transform)
 predictions = rfc.predict(test_dataset)
 
-from sklearn.metrics import *
+from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
+
+score = accuracy_score(test['Label'], predictions)
